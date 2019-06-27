@@ -1,0 +1,42 @@
+// Containers / Wrapper Styling --------------//
+
+.container-fluid {
+    padding: 0;
+}
+
+.wrapper__items {
+    margin: 0;
+}
+
+#homePage__padding {
+    padding: 0;
+}
+
+.wrapper__filter {
+    margin: 0 0 20px 0;
+}
+
+// Text -----------------//
+
+// ---- H1
+.index__heading {
+    // text-align: center;
+    font-size: 2em;
+    color: $secondaryGrey;
+    margin: 10px 0px 10px 0px;
+}
+
+.dropdown-menu {
+    width: 90%;
+}
+
+.index__heading {
+    font-family: Circular;
+    font-size: 3em;
+    padding: 0.5em 1.5em;
+}
+
+#totalProducts {
+    text-align: center;
+    margin-bottom: 1.5em;
+}

@@ -1,0 +1,54 @@
+// Containers / Wrapper Styling --------------//
+.wrapper {
+  margin: 0px 5px 5px 20px;
+}
+
+.wrapper_productDesc {
+  padding-top: 10px;
+}
+
+.profile__border {
+  border-left: 1px solid $tertiaryGrey;
+  margin-left: 5px;
+  padding-bottom: 50px;
+}
+
+.rightPanel__margin--top {
+  margin-top: 4%;
+}
+
+hr {
+  width: 65%;
+  margin-left: 0;
+}
+
+// Profile Content ------------//
+
+// ---- Images
+.img__block img {
+  width: 100%;
+}
+
+// ---- Text
+
+.productDesc__paragraph {
+  margin-right: 10%;
+  padding-bottom: 10px;
+}
+
+.form-check-inline {
+  margin-left: 10px;
+}
+
+#summary__h3 {
+  color: $primaryPurple;
+  text-transform: uppercase;
+}
+
+#summary__stack {
+  margin-top: 10px;
+}
+
+#summary__total--price {
+  margin-left: 20px;
+}

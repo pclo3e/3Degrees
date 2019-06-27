@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3 Degrees</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="style/css/main.css">
+</head>
+
+<body class="container-fluid"> 
+	<header>
+		<nav class="navbar">
+            <img src="img/logo.png" class="navbar-brand">
+            <i class="fas fa-shopping-cart"></i>
+		</nav>
+	</header>
+
+	<div class="custom-container">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner"> 
+				<div class="carousel-item active">
+				<img class="d-block w-100" src="img/carousel2.jpg" alt="First slide">
+				</div>
+				<div class="carousel-item">
+				<img class="d-block w-100" src="img/carousel_iphone3.png" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+				<img class="d-block w-100" src="img/carousel3.jpg" alt="Third slide">
+				</div>
+			</div>
+		</div>
+
+		<div> 
+			
+            <h1 class="index__heading">Our Range</h1>
+			
+			<div class="row wrapper__filter">
+
+				<div class="col-6 col__card"> 
+					<div class="dropdown">
+						<button class="btn dropdown-toggle btn__sort" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  SORT
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						  <a class="dropdown-item" onclick="sortNewest()">Newest</a>
+						  <a class="dropdown-item" onclick="sortLow()">Price (Low - High)</a>
+						  <a class="dropdown-item" onclick="sortHigh()">Price (High - Low)</a>
+						</div>
+					</div> 
+				</div>
+
+				<div class="col-6 col__card"> 
+					<div id="showFilter">
+						<button class="btn btn__filters"> FILTERS </button>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+        <div id="totalProducts">
+
+        </div>
+		
+		<div class="wrapper__items row" id="allProducts"> 
+			
+		</div>
+
+		
+
+	</div>
+
+	<footer>
+		<div class="footer__content">
+			<span class="footer__text text-center">Copyright &copy;3Degrees NZ, Inc. All rights reserved to Bedazzle Dat Booty</span>
+			<span class="footer__text text-right">T&Cs</span>
+		</div>
+	</footer>
+
+<!--  =============== filter ============== -->
+
+	<div id="modal"></div>
+
+        <div class="container__mobileFilter" id="slide">
+			<i class="fas fa-times" id="closebtn"></i>
+            <div class="filter__header">
+                <h2>FILTER</h2>
+            </div> 
+   
+            <div class="accordion" id="accordionExample">
+                <div class="card card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Brand
+                        </button>
+                    </h5>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <input class="brand" type="checkbox" name="Blackberry" value="Blackberry">
+                            <label for="Blackberry">Blackberry</label>
+                            <br>
+                            <input class="brand" type="checkbox" name="Nokia" value="Nokia">
+                            <label for="Nokia">Nokia</label>  
+                            <br>
+                            <input class="brand" type="checkbox" name="Samsung" value="Samsung">
+                            <label for="Samsung">Samsung</label>  
+                            <br>
+                            <input class="brand" type="checkbox" name="Retrophilia" value="Retrophilia">
+                            <label for="Retrophilia">Retrophilia</label>  
+                            <br>
+                            <input class="brand" type="checkbox" name="Iphone" value="Iphone">
+							<label for="Iphone">Iphone</label>
+							<br>
+							<input class="brand" type="checkbox" name="Motorola" value="Motorola">
+                            <label for="Motorola">Motorola</label>    
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Price
+                        </button>
+                    </h5>
+                    
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <input class="price" type="checkbox" name="1" value="10-50">
+                            <label for="1">$ 10 - $ 50</label>
+                            <br>
+                            <input class="price" type="checkbox" name="2" value="50-150">
+                            <label for="2">$ 50 - $ 150</label>  
+                            <br>
+                            <input class="price" type="checkbox" name="3" value="150-300">
+                            <label for="3">$ 150 - $ 300</label>  
+                            <br>
+                            <input class="price" type="checkbox" name="4" value="300-1000">
+							<label for="4">$ 300 - $ 1000</label>  
+				
+                        </div>                   
+                    </div>
+                </div>
+                <div class="card card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Specs
+                        </button>
+                    </h5>
+                    
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <input class="specs" type="checkbox" name="Waterproof" value="Waterproof">
+                            <label for="Waterproof">Waterproof</label>
+                            <br>
+                            <input class="specs" type="checkbox" name="Internet" value="Internet">
+                            <label for="Internet">Internet</label>  
+                            <br>
+                            <input class="specs" type="checkbox" name="Games" value="Games">
+                            <label for="Snake Game">Games</label>  
+                            <br>
+                            <input class="specs" type="checkbox" name="MP3" value="MP3">
+                            <label for="Games">Mp3</label>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" value="VIEW ITEMS" class="btn__viewItems" onclick="filterResults()">
+                  
+        </div>
+
+
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"
+	integrity="sha256-DI6NdAhhFRnO2k51mumYeDShet3I8AKCQf/tf7ARNhI="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

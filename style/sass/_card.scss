@@ -1,0 +1,46 @@
+
+// Card Container Styling ---------//
+.col__card {
+    padding: 0;
+}
+
+// Card Styling ------------------//
+.card {
+    border-radius: 0;
+    padding: 1.5em;
+}
+
+.col__card:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    z-index: 1;
+}
+
+// Card IMG Styling --------------//
+.card img {
+    width: 100%;
+}
+
+// Card Text Styling -------------//
+.card__brand {
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: Circular;
+}
+
+.card__model {
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Circular;
+}
+
+.card__price {
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 6px;
+    font-family: Circular;
+}
+
+

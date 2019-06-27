@@ -1,0 +1,30 @@
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .navbar {
+        height: 5em;
+    }
+    .custom-container {
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+    .card {
+        padding: 2.5em;
+    }
+
+    footer {
+        margin-top: 2em; 
+        padding-top: 4em;
+        height: 7em;
+    }
+
+    .navbar-brand {
+        margin-left: 50px;
+        width: 65px;
+    }
+
+    .fa-shopping-cart {
+        margin-right: 50px;
+    }
+
+}

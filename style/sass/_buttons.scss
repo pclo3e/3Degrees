@@ -1,0 +1,155 @@
+
+.btn__viewItems {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $primaryOrange;
+    color: #fff;
+    border: none;
+    height: 40px;
+    width: 200px;
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+}
+
+.btn__checkout {
+    background-color: $primaryOrange;
+    color: white;
+    border: none;
+    padding: 8px 70px;
+    margin: 16px 0px 16px 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.btn__sort,
+.btn__filters {
+    width: 100%;
+    border-radius: 0;
+    font-family: Circular;
+    font-size: 120%;
+}
+
+.btn {
+    height: 40px;
+    background-color: #fff;
+    border: 1px grey solid;
+}
+
+.btn-link {
+    border: 0;
+}
+
+
+// Radio Buttons ------------//
+
+.container__input {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.container__radio {
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 4px;
+}
+
+.container__radio--colours {
+    margin-right: 50px;
+    margin-left: 15px;
+    top: 20px;
+}
+
+.container__radio--storage {
+    margin-right: 30px;
+    margin-left: 15px;
+    top: 20px;
+}
+
+.container__radio--bedazzle {
+    margin-left: 15px;
+    top: 20px;
+    font-size: 14px;
+}
+
+
+// 1. Hide the browser's default radio button by putting a span container overtop //
+.container__radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+// 2. Create a custom radio button by placing a styled span within container //
+.checkmark {
+    position: absolute;
+    top: 0;
+}
+
+.checkmark__colours {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    right: -10px;
+
+}
+
+.checkmark__storage { 
+    // background-color: white;
+    border: 1px solid $secondaryGrey;
+    width: 100px;
+    height: 35px;
+    left: -20px;
+    border-radius: 5%;
+}
+
+.checkmark__bedazzle { 
+    // background-color: white;
+    border: 1px solid $secondaryGrey;
+    width: 15px;
+    height: 15px;;
+    // left: -20px;
+    top: 7px;
+    border-radius: 50%;
+}
+
+/* When the radio button is checked, add a blue background */
+.container__radio input:checked ~ .checkmark {
+    border: 3px solid $primaryOrange;
+
+}
+
+
+// COLOR Radio Buttons ------------//
+
+#radio__colour--white {
+    background-color:$tertiaryGrey;
+    // padding-left: 25px;
+}
+
+#radio__colour--grey {
+    background-color: #b9b5b5;
+}
+
+#radio__colour--black {
+    background-color: $primaryGrey;
+}
+
+// STORAGE Radio Buttons ------------//
+
+
+.btn__checkout {
+    background-color: $primaryOrange;
+    color: white;
+    border: none;
+    padding: 8px 70px;
+    margin: 16px 0px 16px 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+}

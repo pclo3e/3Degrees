@@ -1,0 +1,53 @@
+html {
+    font-size: 62.5%;
+}
+
+// Nav Bar -----------------//
+.navbar {
+    background-color: $lavenderGrey;
+    height: 4em;
+}
+
+.navbar-brand { //make SVG
+    width: 55px;
+    position: absolute;
+    top: 2px;
+    z-index: 2;
+}
+
+.fa-shopping-cart {
+    font-size: 2.2em;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    padding-right: 20px;
+}
+
+.fa-shopping-cart:hover {
+    font-size: 2.3em;
+}
+
+// Footer -----------------//
+footer {
+    min-height: 5em;
+    background-color: $tertiaryGrey;
+}
+
+.footer__text {
+    margin: 15px 15px 0px 15px; 
+}
+
+// font -----------------//
+
+
+@font-face {
+    font-family: 'Circular';
+    src: url('../fonts/Circular-Medium.eot');
+    src: url('../fonts/Circular-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circular-Medium.woff2') format('woff2'),
+        url('../fonts/Circular-Medium.woff') format('woff'),
+        url('../fonts/Circular-Medium.ttf') format('truetype'),
+        url('../fonts/Circular-Medium.svg#Circular-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}

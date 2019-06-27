@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/css/main.css">
+    <title>Nokia Lumonis</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar">
+                <img src="img/logo.png" class="navbar-brand">
+                <i class="fas fa-shopping-cart"></i>
+            </nav>
+        </header>
+        <div class="row">
+             <!--Left Hand Panel-->
+            <div class="img__block col-md-6">
+                
+                <div>
+                    <a href="index.html"><i id="icon__backArrow" class="fas fa-angle-left fa-3x" style="color:#6A6A6A;"></i></a>
+                    <img class="img-fluid" src="img/phone_images/PNG/Nokia_Layer_Mask.png" alt="Nokia Lumonis">
+                </div>
+            </div>
+            <!--Right Hand Panel-->
+            <div class="rightPanel__margin--top col-md-6 ">
+                <div class="wrapper">
+                    <div class="wrapper__productDesc">
+                        <h1 class="productDesc__title">Nokia Lumonis</h1>
+                        <p class="productDesc__paragraph">The nokia Lumonis is the next phone in line for any witch or warlock, this is chargered by the moonlight and lasts till the next full moon, it is black and white, has a really cool game on it called snake. If you want to be the best guild leader, this is the phone you want.</p>
+                    </div>
+                    <div class="productDesc__specs row">
+                        <div class="productDesc__specs--leftPanel">
+                            <ul>
+                                <li>Water Proof</li>
+                                <li>Internet</li>
+                            </ul>
+                        </div>
+                        <div class="productDesc__specs--rightPanel">
+                            <ul>
+                                <li>Internet</li>
+                                <li>MP3 Player</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper__radio"> <!--Colour Radio Buttons-->
+                    <div class="wrapper radio__colour">
+                        <h3 class="profile__h3">1. Choose a Colour</h3>
+                            <div class="profile__border">
+                                <div class="container__input form__group">
+                                    <form id="phoneForm" method="post" action="#" onsubmit="alert('Razzle Dazzle Baby! Thanks For Your Order'); return false;"> 
+                                        <label class="container__radio container__radio--colours">
+                                            <input type="radio"  name="radio__colour" id="colour0" checked value="White" onchange="updateTotal();">
+                                            <span id="radio__colour--white" class="checkmark checkmark__colours"></span>
+                                        </label>
+                                        <label class="container__radio container__radio--colours">
+                                            <input type="radio"  name="radio__colour" id="colour1" value="Grey" onchange="updateTotal();">
+                                            <span id="radio__colour--grey" class="checkmark checkmark__colours"></span>
+                                        </label>
+                                        <label class="container__radio container__radio--colours">
+                                            <input type="radio"  name="radio__colour" id="colour2" value="Black" onchange="updateTotal();">
+                                            <span id="radio__colour--black" class="checkmark checkmark__colours"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="wrapper radio__storage"> <!--Storage Buttons-->
+                            <h3 class="profile__h3">2. Choose Your Storage</h3>
+                            <div class="profile__border">
+                                <div class="container__input form__group">
+                                    <label class="container__radio container__radio--storage">
+                                        <input type="radio" name="radio__storage" id="storage0" checked value="250mb" onchange="updateTotal();">
+                                        <span id="radio__storage--250" class="checkmark checkmark__storage"></span> 250MB
+                                    </label>
+                                    <label class="container__radio container__radio--storage">
+                                        <input type="radio" name="radio__storage" id="storage1" value="500mb" onchange="updateTotal();">
+                                        <span id="radio__storage--500" class="checkmark checkmark__storage"></span> 500MB
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapper radio__bedazzle">  <!--Bedazzle-->
+                            <h3 class="profile__h3">3. Bedazzle <span>(Pimp My Phone)</span></h3>
+                                <div class="profile__border">
+                                    <div class="form-check-inline">
+                                        <label class="container__radio container__radio--bedazzle  form-check-label">
+                                            <input type="radio" class="form-check-input" name="radio__bedazzle" id="bedazzle0" checked value="HelloKitty" onchange=updateTotal();> Hello Kitty
+                                            <span id="radio__bedazzle--hellokitty" class="checkmark checkmark__bedazzle"></span> 
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="container__radio container__radio--bedazzle form-check-label">
+                                            <input type="radio" class="form-check-input" name="radio__bedazzle" id="bedazzle1" value="Swarovski" onchange="updateTotal();"> Swarovski
+                                            <span id="radio__bedazzle--swarokvsi" class="checkmark checkmark__bedazzle"></span> 
+                                        </label>
+                                    </div>   
+                                    <div class="form-check-inline disabled">
+                                        <label class="container__radio container__radio--bedazzle  form-check-label">
+                                            <input type="radio" class="form-check-input" name="radio__bedazzle" id="bedazzle2" value="Leopard" onchange="updateTotal();"> Leopard
+                                            <span id="radio__bedazzle--leopard" class="checkmark checkmark__bedazzle"></span> 
+                                        </label>
+                                    </div> 
+                                </div>    
+                        </div>
+                </div>
+                    <div class="wrapper wrapper__summary">
+                        <h2 id="summary__h3" class="profile__h3">Summary</h2>
+                        <div>
+                            <p id="summary__stack"> Phone: $100</p>
+                        </div>
+                        <hr>
+                        <div class="summary__total d-inline-block">
+                            <h4>TOTAL $</h4>
+                        </div>
+                        <div class="summary__total d-inline-block">
+                            <h4 id="summary__total--price"></h4>
+                        </div>
+                        <div class="summary__checkout"> <!--Insert Icon into Button-->
+                            <button class="btn__checkout" type="submit"><i id="icon__checkout" class="fas fa-shopping-cart"></i>Check Out</button>
+                        </div>
+                    </div>  
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class=" footer content d-flex justify-content-between">
+                <p class="footer__text">Copyright &copy;3Degrees NZ, Inc. All rights reserved to Bedazzle Dat Booty</p>
+                <p class="footer__text">T&Cs</p>
+            </div>
+        </footer>
+    </div>
+<script src="js/profile.js"></script>  
+</body>
+</html>
